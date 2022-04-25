@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Galerie d'Image en HTML, CSS et Javascript</title>
+	<style type="text/css">
+         body {
+         	background-color: #111;
+         }
+		.auteur {
+			text-align: center;
+			margin-top: 70px;
+			color: grey;
+			font-size: 25px;
+		}
+		   h1 {
+			text-align: center;
+			font-family: cursive;
+			color: red;
+			margin-bottom: 5px;
+		}
+		.screen {
+			width: 400px;
+			height: 250px;
+			border: 30px inset black;
+			margin: 0 auto;
+			margin-bottom: 50px;
+			margin-bottom: 15px;
+		}
+
+		.screen img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.photos {
+			display: flex;
+			justify-content: space-around;
+		}
+
+
+		.photo {
+			border: 2px solid black;
+			width: 200px;
+			height: 200px;
+			border-radius: 5px;
+		}
+
+		.photo img {
+			width: 100%;
+			height: 100%;
+		}
+
+
+		@media screen and (max-width: 320px) {
+			.photo {
+				width: 70px;
+				height: 70px;
+			}
+
+			.photo img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.screen {
+				width: 250px;
+				border: 10px inset black;
+			}
+		}
+
+		@media screen and (min-width: 320px ) and (max-width: 498px) {
+			.photo {
+				width: 100px;
+				height: 100px;
+			}
+
+			.photo img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.screen {
+				width: 250px;
+				border: 10px inset black;
+			}
+		}
+
+
+		@media screen and (min-width: 500px ) and (max-width: 998px) {
+			.photo {
+				width: 100px;
+				height: 120px;
+			}
+
+			.photo img {
+				width: 100%;
+				height: 100%;
+			}
+
+			.screen {
+				width: 300px;
+				border: 10px inset black;
+			}
+		}
+	</style>
+	<script type="text/javascript">
+		function image(serge) {
+			// body...
+			/*var image_wrapper = document.querySelector("#image_wrapper");
+			image_wrapper.innerHTML ="<img src='serge'>";*/
+
+			var limage = document.querySelector('.limage');
+			var change = limage.setAttribute('src', serge);
+
+		}
+	</script>
+</head>
+<body>
+	<h1>IMAGE GALLERY</h1>
+	<div class="screen" id="image_wrapper">
+		<img src="./latina.jpg" class="limage">
+	</div>
+
+	<div class="photos">
+		<div class="photo" onclick="image('girl1.jpg');"><img src="./girl1.jpg"></div>
+		<div class="photo" onclick="image('girl2.jpg');"><img src="./girl2.jpg"></div>
+		<div class="photo" onclick="image('girl3.jpg');"><img src="./girl3.jpg"></div>
+		<div class="photo" onclick="image('girl4.jpg');"><img src="./girl4.jpg"></div>
+		<div class="photo" onclick="image('girl5.jpg');"><img src="./girl5.jpg"></div>
+	</div>
+
+	<footer>
+		<p class="auteur">By Serge Akanni Adounsi</p>
+	</footer>
+</body>
+</html>
