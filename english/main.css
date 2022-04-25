@@ -1,0 +1,755 @@
+*,*::before,*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: #f2f2f2;
+}
+
+.container {
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+}
+
+
+
+/*-------------HEADER SECTION STYLES--------*/
+header {
+	display: flex;
+	justify-content:space-between;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin: 0;
+	background-color: black;
+	z-index: 1000;
+}
+
+.logo-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(images/flag.png);
+	background-position: center;
+	background-size: cover;
+}
+
+.logo-wrapper img{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo-name {
+	color: navy;
+	font-family: cursive;
+	font-weight: bold;
+}
+
+.logo-text {
+	background-color: rgba(255,255,255, 0.7);
+}
+
+.toggle-wrapper {
+	background-color: blue;
+	position: relative;
+	margin-top: 5px;
+	margin-right: 40px;
+}
+
+.toggle-wrapper img {
+	width: 35px;
+	height: 35px;
+	border-radius: 4px;
+}
+
+.menu {
+	background-color: rgba(255,255,255, 0.6);
+	position: absolute;
+	display: block;
+	cursor: pointer;
+}
+
+.close {
+	background-color: rgba(255,255,255, 0.6);
+	position: absolute;
+	cursor: pointer;
+	display: none;
+}
+
+.navigation-wrapper {
+	position: absolute;
+	top: 57px;
+	width: 70vw;
+	background-color: rgba(0,0,0, 0.9);
+	height: 100vh;
+	transform: translateX(-100%);
+	transition: 1s;
+}
+
+.active  {
+	transform: translateX(0%);
+}
+
+.navigation-wrapper .nav-list {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.navigation-wrapper .nav-list li a{
+   display: block;
+   color: white;
+   margin-bottom: 50px;
+   font-weight: bold;
+   text-decoration: none;
+   letter-spacing: 2px;
+   transition: .7s;
+}
+
+.navigation-wrapper .nav-list li a:hover{
+   color: black;
+   background-color: white;
+   text-decoration: none;
+}
+
+/*-----------MAIN SECTION STYLES--------*/
+.homepage_image {
+	width: 100%;
+	height: 300px;
+	background-image: url(images/flag.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.homepage_image .heading1 {
+	font-size: 4vw;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.homepage_image .overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.homepage_image .overlay .lead {
+	text-align: center;
+	font-size: 4vw;
+	padding-bottom: 45px;
+}
+
+.homepage_image .overlay .btn{
+	text-align: center;
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	font-size: 22px;
+	text-decoration: none;
+	background-color: royalblue;
+	padding: 10px 20px;
+	border-radius: 5px;
+	color: white;
+	margin-top: -35px;
+}
+
+.homepage_image .overlay .heading1 {
+	font-size: 22px;
+}
+
+.homepage_image .overlay .lead {
+	font-size: 22px;
+}
+
+
+.role p{
+	font-size: 17px;
+}
+
+.role h1 {
+	font-size: 18px;
+	text-align: center;
+}
+
+.attribution {
+	color: grey;
+	font-style: italic;
+}
+
+.plan {
+	display: flex;
+	justify-content: center;
+}
+
+.plan h2 {
+	font-size: 22px;
+	text-align: center;
+}
+
+.plan {
+	2display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.plan .card_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.plan .card {
+	max-width: 300px;
+	height: auto;
+	padding: 15px;
+	2border: 2px solid grey;
+	border-radius: 5px;
+	margin: 20px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: lightgrey;
+	2color: white;
+}
+
+.plan .card img{
+	width: 100%;
+	height: 230px;
+}
+
+
+.btn1 {
+	display: block;
+	padding: 15px 10px;
+	color: white;
+	background-color: navy;
+	border-radius: 7px;
+	text-decoration: none;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 200px;
+}
+
+.temoignage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.temoignage-container h2{
+   	text-align: center;
+   }
+
+
+.temoignage img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.temoignage-guillemet1 {
+	font-size: 46px;
+	position: absolute;
+	top: 85px;
+	left: 2px;
+}
+
+.temoignage-guillemet2 {
+	font-size: 43px;
+	position: absolute;
+	top: 140px;
+}
+
+.temoignage p{
+	color: grey;
+	font-style: italic;
+	width: 300px;
+}
+
+.temoignage-nom{
+   	margin-top: -10px;
+}
+
+
+/*-------FOOTER SECTION--------*/
+footer {
+	text-align: center;
+	padding-top: 50px;
+}
+
+footer hr {
+	height: 5px;
+	background-color: navy;
+}
+
+/*---------START TRADUCTEUR PAGE-----------*/
+
+.traducteur_container {
+	background-image: linear-gradient(to right, blue, rgba(0,0,0,0.3));
+	height: 100vh;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	color: white;
+}
+
+.dico_form {
+	width: 70%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.traducteur_container h1 {
+	text-align: center;
+}
+
+.traducteur_container .dico {
+	width: 100%;
+	padding: 9px;
+	border-radius: 50px;
+	border: 1px solid black;
+	margin-bottom: 20px;
+}
+
+.dico_btn {
+	width: 200px;
+	padding: 15px 5px;
+	border: none;
+	border-radius: 4px;
+	background-color: rgb(23, 100, 255);
+	color: white;
+	font-size: 1rem;
+	transition: .5s;
+}
+
+.dico_btn:hover {
+	background-color: blue;
+}
+
+.output {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	background-color: white;
+	display: none;
+	padding: 20px;
+	color: green;
+	font-size: 18px;
+	font-weight: bold;
+}
+/*--------------END TRADUCTEUR PAGE-------------*/
+
+/*--------START COURS PAGE---------*/
+
+.cours-wrapper {
+   	display: grid;
+   	grid-template-columns: 250px ;
+   	2grid-template-rows: 300px;
+   	grid-gap: 20px;
+   	justify-content: center;
+   }
+
+   .cours-item {
+   	position: relative;
+   	width: 260px;
+   	height: 300px;
+   }
+
+   .cours-item img {
+   	width: 100%;
+   	height: auto;
+   }
+
+   .cours-item-text {
+   	   width: 100%;
+   	   height: 50%;
+       position: absolute;
+       top: 0;
+       left: 0;
+       background-color: rgba(0,0,0, 0.7);
+   }
+
+   .cours-item-text h3 {
+   	color: white;
+   	padding: 7px;
+   	text-align: center;
+   	padding-top: 50px;
+   }
+
+   .cours-item-text h3 a{
+   	color: white;
+   	text-decoration: none;
+   	display: block;
+   	padding: 0 3px;
+   	text-align: center;
+   }
+
+   .cours-item-text h3 a::before{
+   	content: '{';
+   	color: red;
+   	padding: 4px;
+   }
+
+   .cours-item-text h3 a::after{
+   	content: '}';
+   	color: red;
+   	padding: 4px;
+   }
+
+/*-------MEDIA QUERY MIN-WIDTH 768px--------*/
+@media screen and (min-width: 768px) {
+	.toggle-wrapper {
+		display: none;
+	}
+
+	.navigation-wrapper {
+	position: relative;
+	top: initial;
+	width: initial;
+	background-color:;
+	height: initial;
+	transform: none;
+	transition: 1s;
+	margin-right: 50px;
+    }
+
+    .navigation-wrapper .nav-list {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   }
+
+  .navigation-wrapper .nav-list li a{
+   display: block;
+   color: white;
+   margin-bottom: 0;
+   margin-left: 30px;
+   font-weight: bold;
+   text-decoration: none;
+   letter-spacing: 2px;
+   background-color: navy;
+   padding: 4px 10px;
+   border-radius: 2px;
+  }
+
+  .navigation-wrapper .nav-list li a:hover{
+   color: black;
+   background-color: white;
+  
+  }
+
+  .container {
+  	width: 80%;
+  }
+
+  /*-----------MAIN (MEDIA MIN 768) SECTION STYLES--------*/
+
+  .homepage_image {
+	width: 100%;
+	height: 670px;
+	background-image: url(images/flag.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+ }
+
+ .homepage_image .overlay .heading1 {
+	font-size: 40px;
+	text-align: center;
+	padding-top: 50px;
+ }
+
+ .homepage_image .overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+  }
+
+  .homepage_image .overlay .lead {
+	text-align: center;
+	font-size: 40px;
+	padding-bottom: 45px;
+  }
+
+  .homepage_image .overlay .btn{
+	text-align: center;
+	display: block;
+	width: 40%;
+	margin: 0 auto;
+
+	font-size: 3vw;
+	text-decoration: none;
+	background-color: royalblue;
+	padding: 10px 20px;
+	border-radius: 5px;
+	color: white;
+  }
+
+  .middle-section {
+	width: 100%;
+	height: 200px;
+	background-image: url(images/ap.jpg);
+	background-size: cover;
+	background-position: 0px -250px;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.middle-section .overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+  }
+
+  .middle-section .overlay p{
+	text-align: center;
+	font-size: 32px;
+  }
+
+  .middle-section .overlay p:first-child{
+	padding-top: 65px;
+  }
+
+
+
+  .role h1 {
+	font-size: 3vw;
+	text-align: center;
+  }
+
+  .role p {
+	font-size: 22px;
+	text-align: center;
+  }
+
+  .attribution {
+	color: grey;
+	font-style: italic;
+  }
+
+  .plan h2 {
+	font-size: 3vw;
+	text-align: center;
+  }
+
+  .plan {
+	2display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+  }
+  .plan .card_container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: blue;
+	width: 100vw;
+  }
+
+  .plan .card {
+  	width: 60%;
+	height: auto;
+	padding: 15px;
+	border: none;
+	background-color: inherit;
+	border-radius: 5px;
+	margin: 0 80px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	font-size: 22px;
+	background-color: red;
+  }
+
+  .plan .card img{
+	width: 100%;
+	height: 200px;
+  }
+
+   .btn1 {
+	display: block;
+	padding: 5px 10px;
+	border: 1px solid grey;
+	color: white;
+	background-color: navy;
+	border-radius: 4px;
+	text-decoration: none;
+	margin-top: 15px;
+	text-align: center;
+	width: 200px;
+   }
+
+   .section-temoignage {
+   	display: flex;
+   	justify-content: space-around;
+   }
+
+   .temoignage {
+   	margin: 10px;
+   }
+
+   .temoignage-guillemet1 {
+	font-size: 46px;
+	position: absolute;
+	top: 80px;
+	left: -18px;
+   }
+
+  .temoignage-guillemet2 {
+	font-size: 43px;
+	position: absolute;
+	top: 195px;
+  }
+
+   .temoignage p{
+   	width: 200px;
+   }
+/*--------END MAIN HOMEPAGE---------*/
+
+/*---------START COURS PAGE MIN 768px ------------*/
+   .cours-wrapper {
+   	display: grid;
+   	grid-template-columns: 250px 250px 250px 250px;
+   	grid-template-rows: 300px;
+   	grid-gap: 50px;
+   }
+
+   .cours-item {
+   	position: relative;
+   	width: 260px;
+   	height: 300px;
+   }
+
+   .cours-item img {
+   	width: 100%;
+   	height: auto;
+   }
+
+   .cours-item-text {
+   	   width: 100%;
+   	   height: 50%;
+       position: absolute;
+       top: 0;
+       left: 0;
+       background-color: rgba(0,0,0, 0.7);
+   }
+
+   .cours-item-text h3 {
+   	color: white;
+   	padding: 7px;
+   	text-align: center;
+   	padding-top: 50px;
+   }
+
+   .cours-item-text h3 a{
+   	color: white;
+   	text-decoration: none;
+   	display: block;
+   	padding: 0 3px;
+   	text-align: center;
+   	2padding-top: 50px;
+   }
+
+   .cours-item-text h3 a::before{
+   	content: '{';
+   	color: red;
+   	padding: 4px;
+   }
+
+   .cours-item-text h3 a::after{
+   	content: '}';
+   	color: red;
+   	padding: 4px;
+   }
+
+}/*-----END MIN-WIDTH 768px------*/
+
+@media screen and (min-width: 600px) {
+	.section-temoignage {
+   	display: flex;
+   	flex-wrap: wrap;
+   	justify-content: space-around;
+   }
+
+   .temoignage {
+   	margin: 10px;
+   }
+
+   .temoignage-guillemet1 {
+	font-size: 46px;
+	position: absolute;
+	top: 80px;
+	left: -18px;
+   }
+
+  .temoignage-guillemet2 {
+	font-size: 43px;
+	position: absolute;
+	top: 195px;
+  }
+
+   .temoignage p{
+   	width: 200px;
+   }
+
+}/*---------END MIN-WIDTH 600px--------*/
+
+@media screen and (min-width: 400px) {
+	.section-temoignage {
+   	display: flex;
+   	flex-wrap: wrap;
+   	justify-content: space-around;
+   }
+
+   .temoignage {
+   	margin: 10px;
+   }
+
+   .temoignage-guillemet1 {
+	font-size: 46px;
+	position: absolute;
+	top: 80px;
+	left: -18px;
+   }
+
+  .temoignage-guillemet2 {
+	font-size: 43px;
+	position: absolute;
+	top: 195px;
+  }
+
+   .temoignage p{
+   	width: 200px;
+   }
+
+   .temoignage-nom{
+   	text-align: center;
+   	margin-top: -10px;
+   }
+
+
+}/*---------END MIN-WIDTH 400px--------*/
+
+
